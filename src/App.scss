@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ul, ol, menu {
+  list-style: none;
+  padding: 0;
+}
+
+html {
+  font-size: var(--defaultFont);
+  line-height: 1.5;
+  background-color: var(--margin-color);
+}
+
+h1{
+  font-size: 3rem;
+  color: var(--text_color_main);
+  text-align: center;
+}
+
+h4{
+  font-size: var(--itemTitleFont);
+  color: var(--text_color_main);
+}
+
+body {
+  font-family: system-ui;
+  width: var(--bodyWidth);
+  margin-inline: auto;
+  border: 1px solid grey;  
+  background-color: var(--background_color);  
+  border-radius: 0.5rem;
+}

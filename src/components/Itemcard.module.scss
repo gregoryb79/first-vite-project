@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.root{
+    
+    display: flex;
+    flex-direction: column;    
+    overflow: hidden;
+    text-align: center;
+    align-items: center;   
+        
+    width: var(--card-width);
+    height: var(--card-height);
+    
+    box-shadow: 10px 10px 15px var(--shadow-color,grey);
+    border-radius: 0.5rem;
+    
+      
+    img{
+        width: calc(var(--card-width) - 0.5rem);
+        cursor: pointer;
+        margin-top: 0.25rem;
+        border-radius: 0.5rem;
+        &:focus {
+            outline: 3px solid #007BFF;          
+            border-radius: 6px;
+        }
+    }  
+        
+    p{
+        font-size: var(--itemTextFont);
+        color: var(--text_color_secondary);
+    }
+    
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--card-width);
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;    
+        margin-top: auto;
+    }
+      
+}
+  
